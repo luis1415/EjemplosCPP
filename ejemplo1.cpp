@@ -4,7 +4,7 @@ using namespace std;
 
 class Persona {
 private:
-    char nombre[40];
+    char nombre[50];
     int edad;
 public:
     void inicializar();
@@ -15,7 +15,7 @@ public:
 void Persona::inicializar()
 {
     cout <<"Ingrese nombre:";
-    cin.getline(nombre,40);
+    cin.getline(nombre,50);
     cout <<"Ingrese edad:";
     cin >>edad;
 }
@@ -32,7 +32,7 @@ void Persona::imprimir()
 
 void Persona::esMayorEdad()
 {
-    if (edad>=18)
+    if (edad>=21)
     {
         cout <<"Es mayor de edad.";
     }
